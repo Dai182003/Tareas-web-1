@@ -1,0 +1,103 @@
+/* Decoración para formulario en estilo.css */
+
+h1 { /* Estilo para el título principal */
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color blanco */
+    margin-top: 20px; /* Espacio superior */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+
+}
+
+/* Estilo para el cuerpo de la página */
+body { 
+    margin: 0; /* Elimina márgenes predeterminados */
+    background: linear-gradient(135deg, #673a9f 25%, #4f8bc7 50%, #197756 100%); /* Fondo degradado */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+     
+}     
+
+/* Estilo para el formulario */
+form { 
+    background: #f8f9fa; /* Fondo claro para el formulario */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(11, 242, 227, 0.864); /* Sombra para dar profundidad */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 30px auto; /* Centra el formulario horizontalmente */
+
+}
+
+/* Estilo para las etiquetas del formulario */
+form label {
+    display: block; /* Hace que las etiquetas sean bloques */
+    margin-bottom: 8px; /* Espacio debajo de las etiquetas */
+    font-weight: 600; /* Negrita para las etiquetas */
+    color: #333333; /* Color oscuro para el texto */
+    transition: all 0.2s ease-in-out; /* Transición suave para efectos */
+    position: relative; /* Posicionamiento relativo para el pseudo-elemento */
+    top: 5px; /* Ajusta la posición vertical */
+    left: 0px; /* Ajusta la posición horizontal */
+}
+
+/* Estilo para los campos de entrada cuando están enfocados */
+input:focus {
+    border: linear-gradient(135deg, #673a9f 30px, #4f8bc7 50%, #197756 100%); /* Cambia el borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 5px rgba(4, 123, 255, 2.5); /* Sombra para resaltar el campo */
+}
+
+
+
+form input, /* Estilo para los campos de entrada */
+form textarea, /* Estilo para áreas de texto */
+form select {  /* Estilo para menús desplegables */
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 18px; /* Espacio debajo de cada campo */
+    border: 1px solid #cccccc; /* Borde gris claro */
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    font-size: 1rem; /* Tamaño de fuente legible */
+    transition: border-color 0.2s; /* Transición suave para el borde */
+}
+
+
+form button, /* Estilo para botones */
+form input[type="submit"] { /* Estilo para botones de envío */
+    transition: background 0.5s, transform 0.9s; /* Transición suave para fondo y transformación */
+}
+
+/* Estilo específico para botones */
+form input[type="submit"] { /* Estilo para botones de envío */
+    background: linear-gradient(135deg, #673a9f 30px, #4f8bc7 50%, #197756 100%); /* Fondo degradado */
+    color: #ffffff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 24px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background 0.2s; /* Transición suave para el fondo */
+}
+
+/* Efecto hover (cambia tamaño) para botones */
+form button:hover, /* Efecto hover para botones */
+form input[type="submit"]:hover { /* Efecto hover para botones de envío */
+    background: linear-gradient(135deg, #673a9f 25%, #4f8bc7 50%, #197756 100%); /* Cambia el fondo al pasar el mouse */
+    box-shadow: #9729b3 2px 1px 3px 1px;  /* Sombra para resaltar el botón */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilos para mensajes de error */
+.error { 
+  color: red; /* Color rojo para errores */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  display: block; /* Mostrar como bloque */
+  margin-top: -5px; /* Espacio arriba del mensaje */
+  margin-bottom: 10px; /* Espacio debajo del mensaje */
+}
+
+/* Clase para mostrar errores */
+.error-visible { 
+  display: block; /* Mostrar el mensaje de error */
+}

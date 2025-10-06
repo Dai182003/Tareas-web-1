@@ -1,0 +1,101 @@
+<!DOCTYPE html>         
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <!-- Vincula la hoja de estilos externa "estilo.css" -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Vincula el archivo JavaScript externo "java.js" -->
+    <script src="java.js"></script>
+</head>
+<body> 
+
+    <!-- Encabezado -->
+    <h1>Registro de clientes</h1>
+    <form> 
+        <!-- Campo para ingresar nombres y apellidos -->
+        <label for="nombre">Nombres y Apellidos:</label>
+        <input type="text" placeholder="Ingrese nombre" required>
+        <span class="error" id="error-nombre"></span>
+
+        <!-- Campo para seleccionar provincia -->
+        <label for="provincia">Provincia:</label>
+        <input list="lista-provincias" id="provincia" name="provincia" required placeholder="Seleccione provincia">
+        <datalist id="lista-provincias">  <!-- Inicio de lista -->
+          <option value="Azuay">
+          <option value="Bolívar">
+          <option value="Cañar">
+          <option value="Carchi">
+          <option value="Cotopaxi">
+          <option value="Chimborazo">
+          <option value="El Oro">
+          <option value="Esmeraldas">
+          <option value="Guayas">
+          <option value="Imbabura">
+          <option value="Loja">
+          <option value="Los Ríos">
+          <option value="Manabí">
+          <option value="Morona Santiago">
+          <option value="Napo">
+          <option value="Pastaza">
+          <option value="Pichincha">
+          <option value="Tungurahua">
+          <option value="Zamora Chinchipe">
+          <option value="Galápagos">
+          <option value="Sucumbíos">
+          <option value="Orellana">
+          <option value="Santo Domingo">
+          <option value="Santa Elena">
+        </datalist>  <!-- Fin de lista -->
+        <span class="error" id="error-provincia"></span>
+        
+        <!-- Campo para ingresar cédula -->
+        <label for="cedula">Cédula:</label>
+        <input type="text" placeholder="Ingrese cedula" required>
+        <span class="error" id="error-cedula"></span>
+
+        
+        <!-- Campo para ingresar edad -->
+        <label for="edad">Edad:</label>
+        <input type="number" placeholder="Ingrese edad" required>
+        <span class="error" id="error-edad"></span>
+
+
+
+        <!-- Campo para seleccionar género -->
+        <label for="género">Género:</label>
+        <input list="lista-genero" id="genero" name="genero" required placeholder="Seleccione genero">
+        <datalist id="lista-genero"> 
+          <option value="Masculino">
+          <option value="Femenino"> 
+        </datalist> 
+        <span class="error" id="error-genero"></span>
+
+
+        <!-- Campo para ingresar email -->
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Ingrese email" required>
+        <span class="error" id="error-email"></span>
+
+        <!-- Campo para ingresar ciudad -->
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" placeholder="Ingrese ciudad" required>
+        <span class="error" id="error-ciudad"></span>
+        
+        <!-- Campo para ingresar teléfono -->
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" placeholder="Ingrese teléfono" pattern="[0-9]{10}" required>
+        <span class="error" id="error-telefono"></span>
+
+
+        <!-- Campo para ingresar dirección -->
+        <label for="direccion">Dirección:</label>
+        <input type="text" placeholder="Ingrese dirección" required>
+        <span class="error" id="error-direccion"></span>
+
+        <!-- Botón Registrar -->
+        <input type="submit" value="Registrar"> 
+    </form> 
+</body>
+</html>
