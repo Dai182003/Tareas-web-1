@@ -1,0 +1,94 @@
+/* Fuente y fondo general */
+body {
+    background: #e9ecef;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #333;
+}
+
+/* Hoja estilo A4 */
+.page {
+    background: #fff;
+    width: 794px;   /* A4 width */
+    min-height: 1123px; /* A4 height */
+    padding: 50px 60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    border-radius: 6px;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #1d3557;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.foto img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-right: 25px;
+    border: 3px solid #1d3557;
+    object-fit: cover;
+}
+.datos h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1d3557;
+    font-weight: 700;
+}
+.datos p {
+    margin: 4px 0;
+    font-size: 15px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 30px;
+}
+h2 {
+    border-left: 6px solid #457b9d;
+    padding-left: 10px;
+    color: #1d3557;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Referencias en tarjetas */
+.ref-container {
+    display: flex;
+    gap: 20px;
+}
+.ref-card {
+    flex: 1;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ref-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.ref-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.ref-card strong {
+    color: #1d3557;
+    font-size: 15px;
+}
